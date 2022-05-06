@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- links -->
+    <link rel="stylesheet" href="style/all.min.css" />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/Calc.css" />
+
+    <title>Road Bike Size Calculator</title>
+  </head>
+
+  <body>
+    <div class="hearder">
+      <div class="container">
+        <div class="head-of-info">
+          <img src="images/logo.png" alt="" />
+          <div class="info">
+            <h1>Bicycle Frame Size Calculator</h1>
+            <p>
+              Our bicycle size calculator will tell you what size bike you need.
+              Choose the type of bike you're interested in and then enter your
+              measurement(s). You will get a printable page with your
+              recommended frame size.
+            </p>
+          </div>
+        </div>
+
+        <div class="content">
+          <h2>Choose a bicycle type:</h2>
+
+          <div class="boxes">
+            <div class="box">
+              <h3>BMX Bike</h3>
+              <img src="images/big.png" alt="" />
+              <p>
+                BMX bikes are designed for racing, jumping and freestyle riding
+                on dirt tracks, ramps and in skate parks.
+              </p>
+              <button class="btn">Click</button>
+            </div>
+            <div class="box">
+              <h3>BMX Bike</h3>
+              <img src="images/small.png" alt="" />
+              <p>
+                BMX bikes are designed for racing, jumping and freestyle riding
+                on dirt tracks, ramps and in skate parks.
+              </p>
+              <button class="btn">Click</button>
+            </div>
+            <div class="box">
+              <h3>Kids Bike</h3>
+              <img src="images/v-small.png" alt="" />
+              <p>
+                Kids bikes have smaller frames and wheels and are designed to
+                help children learn to ride.
+              </p>
+              <button class="btn">Click</button>
+            </div>
+            <div class="box">
+              <h3>BMX Bike</h3>
+              <img src="images/big.png" alt="" />
+              <p>
+                BMX bikes are designed for racing, jumping and freestyle riding
+                on dirt tracks, ramps and in skate parks.
+              </p>
+              <button class="btn">Click</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Header -->
+
+    <!-- Start Input info -->
+
+    <div class="information">
+      <div class="info-container">
+        <img src="images/think.png" alt="" class="think" />
+        <div class="info-header">
+          <h1>Bicycle Frame Size Calculator</h1>
+          <p>
+            Mountain bikes are designed for all types of terrain, from flat
+            gravel paths to steep rocky trails. The bikes usually have sturdy
+            frames, thick, knobby tires and suspension in the front to absorb
+            bumps from rough terrain. There are three primary styles of mountain
+            bikes: no suspension, front-suspension and full suspension. They are
+            all sized the same – using a riders height and leg length to
+            determine frame size. This calculator will recommend a mountain bike
+            size based on your measurements. If you don’t know your leg length,
+            you will get a range of frame sizes to try out.
+          </p>
+        </div>
+        <div class="info-content">
+          <h1>Rider Information:</h1>
+          <div class="info-box">
+            <div class="imge-box">
+              <img src="images/big.png" alt="" />
+              <p>Rode Bike</p>
+            </div>
+
+            <form action="" class="options-boxes">
+              <select id="select-Rider" required>
+                <option value="">Rider</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Baby">Baby</option>
+              </select>
+
+              <select name="height" id="height" required>
+                <option value="">Height</option>
+                <option value="5.8">5.8</option>
+                <option value="6">6</option>
+                <option value="5.5">5.5</option>
+              </select>
+
+              <select name="leg" id="leg" required>
+                <option value="">Leg Length (inseam)</option>
+                <option value="32">32</option>
+                <option value="33">33</option>
+                <option value="31">31</option>
+              </select>
+
+              <div class="calc">
+                <input type="calc" value="Calculate" id="btn" />
+                <input type="reset" value="Reset" />
+              </div>
+            </form>
+          </div>
+          <h1>Length of leg</h1>
+          <div class="result">result</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Input info -->
+
+    <!-- script -->
+    <script src="calc.js"></script>
+  </body>
+</html>
